@@ -1,0 +1,24 @@
+#vehiculos{
+    border: 5px;
+    position: static;
+    z-index: auto;
+    cursor: all-scroll;
+    margin:20px auto;        
+     border:1px solid #e70a0a;
+     height:30px;
+     width: 230px;
+     overflow: hidden;
+     position:relative;
+}
+.lista{
+    margin:20px auto;        
+     border:1px solid #3307d3;
+     height:30px;
+     width: 230px;
+     overflow: hidden;
+     position:relative;
+     border: 5px;
+     position: relative;
+     z-index: initial;
+     cursor: crosshair;
+}
