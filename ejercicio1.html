@@ -4,25 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio1</title>
 </head>
+<style>
+    section img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+    }
 
-<body>
+    section img:hover {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    
+</style>
 
-    <h1>Ejercicio 1</h1>
+<body style="background-color:black; margin: 0;">
+    <header style="background: linear-gradient(90deg, #f10f2d,#2101d8);display: flex;height: 80px;
+    align-items: center;">
+        <nav style="display: flex;
+        align-items: center;justify-content: space-between;
+        padding-top: 20px;padding-left: 5%;padding-right: 5%;font-weight: bold;">
+            <ul style="display: inline-block;padding: 0px 20px;">
+                <li style="display: inline-block;padding: 0px 20px"><a style="color: #2101d8; text-decoration: none;" href="index.html">INICIO</a></li>
+                <li style="display: inline-block;padding: 0px 20px"><a style="color: #2101d8; text-decoration: none;" href="index.html">Ejercicio1</a></li>
+                <li style="display: inline-block;padding: 0px 20px"><a style="color: #2101d8; text-decoration: none" href="ejercicio2.html">Ejercicio2</a></li>
+                <li style="display: inline-block;padding: 0px 20px"><a style="color: #2101d8; text-decoration: none" href="ejercicio3.html">Ejercicio3</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <h1
+        style="background: #ccc;background: linear-gradient(90deg, #f10f2d,#2101d8);font-family: system-ui;font-size: 3rem; -webkit-text-fill-color: transparent;-webkit-background-clip:text;">
+        Ejercicio 1</h1>
     <!-- CSS inline -->
     <!-- Etiquetas HTML: img, p -->
     <!-- Atributos CSS: color, background-color, border-radius, text-align -->
-    <div style="background-color:rgb(47, 4, 87); border-radius: 10px;">
+    <section style="display: flex; width: 600px;height: 430px; margin: 0 auto;">
+        <img style="border-radius: 10px" src="images/spiderman.webp" alt="">
+        <img src="images/black.webp" alt="">
+        <img src="images/iron.webp" alt="">
+        <img src="images/black2.webp" alt="">
+        <img style="border-radius: 10px" src="images/logo-spider-man-3002282.webp" alt="">
 
-        <img style="border-radius: 50px;" src="images/imagen1.jpg" alt="">
-
-
-        <p style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 17, 255);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga quidem, dolorem ullam reiciendis
-            blanditiis illo aut. Repudiandae, repellat? Harum, quidem! Nam a ab quae suscipit, hic repellat harum
-            ipsum!
-        </p>
-
+    </section>
+    <div>
+        <p style="text-align: center;color: #f10f2d;">Spider-Man, traducido en ocasiones como el Hombre Araña,​ es un
+            personaje creado por los estadounidenses
+            Stan Lee y Steve Ditko, e introducido en el cómic Amazing Fantasy n.° 15, publicado por Marvel Comics en
+            agosto de 1962</p>
     </div>
 
 </body>

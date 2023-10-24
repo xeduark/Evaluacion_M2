@@ -1,24 +1,126 @@
-#vehiculos{
-    border: 5px;
-    position: static;
-    z-index: auto;
-    cursor: all-scroll;
-    margin:20px auto;        
-     border:1px solid #e70a0a;
-     height:30px;
-     width: 230px;
-     overflow: hidden;
-     position:relative;
+body{
+    background: gray;
+    margin: 0;
 }
-.lista{
-    margin:20px auto;        
-     border:1px solid #3307d3;
-     height:30px;
-     width: 230px;
-     overflow: hidden;
-     position:relative;
-     border: 5px;
-     position: relative;
-     z-index: initial;
-     cursor: crosshair;
+/*menu hamburguesa*/
+.nav{
+    padding: 0 40px;
+    height: 80px;
+    background: #8802a9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+ul li{
+    list-style: none;
+}
+.nav_target{
+    
+}
+.nav_logo{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.nav_input:checked + .nav_menu{
+    background: tomato;
+}
+.nav_label, .nav_input{
+    display: none;
+}
+@media (max-width:1500px){
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+   
+}
+.nav_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+.nav_item{
+    color: #fff;
+    text-decoration: none;
+    --clip-path:polygon(0 0,100% 100%, 0 100%);
+}
+.nav_item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    --clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+.nav_item:hover{
+    --clippy:polygon(0 0,100% 100%, 0 100%);
+}
+.nav_container{
+display: flex;
+height: 100px;
+width: 90%;
+margin: 0 auto;
+justify-content: space-between;
+align-items: center;
+}
+
+/*inicio selection*/
+.contenedor{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 100px;
+    height: 50px;
+}
+.caja{
+    border: none;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 50%;
+    color: white;
+    background-color: #144092;
+    font-size: 20px;
+    cursor: cell;
+}
+.contenedor .icon-contenedor{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#023ca9;
+}
+/*fin selection*/
+
+/*inicio logo menu hamburguesa */
+button{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+}
+button > div{
+    background:white;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+button:hover div:first-child{
+transform: rotate(45deg);
+}
+button:hover div:nth-child(2){
+    opacity: 0;
+}
+button:hover div:last-child{
+    transform: rotate(-45deg);
+}
+/*fin logo menu hamburguesa*/

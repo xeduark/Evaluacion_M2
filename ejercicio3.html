@@ -4,29 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio3</title>
 </head>
+<link rel="stylesheet" href="style.css">
 
 <body>
+    <nav class="nav">
+        <div class="nav_container">
 
-    <h1>Ejercicio 3</h1>
+            <h1 class="nav_logo">Ejercicio 3</h1>
+            <label for="menu" class="nav_label">
+
+                <button class="nav_target">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+
+            </label>
+            <input type="checkbox" id="menu" class="nav_input">
+             <ul class="nav_menu">
+                    <li><a href="index.html" class="nav_item">INICIO</a></li>
+                    <li><a href="ejercicio1.html" class="nav_item">Ejercicio1</a></li>
+                    <li><a href="ejercicio2.html" class="nav_item">Ejercicio2</a></li>
+                    <li><a href="ejercicio3.html" class="nav_item">Ejercicio3</a></li>
+            </ul> 
+
+        </div>
+
+    </nav>
+
     <!-- CSS externo -->
     <!-- Selectores de identificación -->
     <!-- Etiquetas HTML: ul, li, select, option -->
     <!-- Atributos CSS: Border, position, z-index, cursor  -->
-    <div>
-        <select name="" id="vehiculos">
-            <option value="1" selected>moto</option>
+    <div class="contenedor">
+        <select class="caja">
+            <option value="">Seleciona un medio de transporte</option>
+            <option value="1">moto</option>
             <option value="2">barco</option>
-            <option value="2">avion</option>
+            <option value="3">avion</option>
+            <option value="4">bicicleta</option>
         </select>
-        <ul class="lista">
-            <li class="inicio">seleccion</li>
-            <li>ciudad - 1</li>
-            <li>ciudad - 2</li>
-            <li>ciudad - 3</li>
-        </ul>
-    </div>
+    </div> 
+
+
 </body>
 
 </html>
